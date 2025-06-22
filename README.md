@@ -1,7 +1,7 @@
 # Amini-Assignment
-Health Registry Data Cleaning and Exploratory Data Analysis Assignement. 
+Health Registry Data Cleaning and Exploratory Data Analysis Assignment. 
 
-Overview
+<h1>Overview</h1>  
 This notebook performs exploratory data analysis (EDA) and cleaning on a healthcare facilities registry dataset. The dataset contains information about various healthcare facilities including facility IDs, names, types, capacities, regions, licensing dates, inspection dates, GPS locations, and remarks. This was done with limited time. 
 
 Key Steps Performed
