@@ -18,12 +18,5 @@ This notebook performs exploratory data analysis (EDA) and cleaning on a healthc
   
 </ul>
 
-
-
-
-GPS Coordinates: Cleaned and extracted valid latitude/longitude pairs
-
-4. Output
-Cleaned dataset exported to cleaned_health_registry.csv
-</ol>
+<h2>Output:</h2>
 Cleaned dataset exported to cleaned_health_registry.csv
