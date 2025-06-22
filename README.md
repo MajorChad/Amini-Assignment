@@ -19,4 +19,4 @@ This notebook performs exploratory data analysis (EDA) and cleaning on a healthc
 </ul>
 
 <h2>Output:</h2>
-Cleaned dataset exported to cleaned_health_registry.csv
+Cleaned dataset exported as cleaned_health_registry.csv
