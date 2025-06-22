@@ -34,7 +34,7 @@ This notebook performs exploratory data analysis (EDA) and cleaning on a healthc
 
   <li>gps_location: 2,292 missing</li>
 </ol>
-Found and removed 1,672 duplicate rows
+<li>Found and removed 1,672 duplicate rows</li>
 </ol>
 2. Data Cleaning
 facility_id: Removed special characters, filled missing values with "missing"
