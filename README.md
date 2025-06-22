@@ -3,7 +3,7 @@ Health Registry Data Cleaning and Exploratory Data Analysis Assignment.
 
 <h1>Overview</h1>  
 
-This notebook performs exploratory data analysis (EDA) and cleaning on a healthcare facilities registry dataset. The dataset contains information about various healthcare facilities including facility IDs, names, types, capacities, regions, licensing dates, inspection dates, GPS locations, and remarks. This was done with limited time. 
+This notebook performs exploratory data analysis (EDA) and cleaning on a healthcare facilities registry dataset. The dataset contains information about various healthcare facilities including facility IDs, names, types, capacities, regions, licensing dates, inspection dates, GPS locations, and remarks. 
 
 [LOOM VIDEO](https://www.loom.com/share/409b63ec7a1a49ef9396054f60039df7?sid=1cdeae10-dd84-4d41-ad3f-6a8b521997a9)
 
@@ -17,139 +17,9 @@ This notebook performs exploratory data analysis (EDA) and cleaning on a healthc
   <li>text2digits</li>
   
 </ul>
-<h1>Key Steps Performed</h1>
-<ol>
-<li> Initial Data Inspection</li>
 
-<ol>
-  <li>Identified dataset structure (9 columns, 13,013 entries)</li>
 
-  <li>Analyzed missing values:</li>
-  <ol>
-  <li>facility_id: 3,708 missing</li>
 
-  <li>facility_type: 1,998 missing</li>
-
-  <li>capacity: 2,652 missing</li>
-
-  <li>gps_location: 2,292 missing</li>
-</ol>
-<li>Found and removed 1,672 duplicate rows</li>
-</ol>
-2. Data Cleaning
-facility_id: Removed special characters, filled missing values with "missing"
-
-facility_name: Removed parentheses content, emojis, and special characters
-
-facility_type:
-
-Standardized values (e.g., "Health Ctr." → "health center")
-
-Mapped to consistent categories (hospital, clinic, etc.)
-
-region:
-
-Fixed backwards names (e.g., "werdna .ts" → "st. andrew")
-
-Standardized using fuzzy matching with parish names
-
-capacity:
-
-Converted text numbers to digits (e.g., "ten beds" → 10)
-
-Extracted numerical values
-
-gps_location:
-
-Split into latitude and longitude columns
-
-Converted various formats to decimal coordinates
-
-dates: Converted to datetime format
-
-remarks: Cleaned text and standardized case
-
-<li>EDA Findings</li>
-Capacity Analysis (by facility type):
-
-Clinic: 146 avg capacity
-
-Community Health Center: 152
-
-Health Center: 136
-
-Hospital: 147
-
-Polyclinic: 144
-
-Regional Distribution: Standardized 11 parishes including "st. andrew", "st. george", "christ church", etc.
-
-GPS Coordinates: Cleaned and extracted valid latitude/longitude pairs
-
-<li>4. Output </li>
-Key Steps Performed
-1. Initial Data Inspection
-Identified dataset structure (9 columns, 13,013 entries)
-
-Analyzed missing values:
-
-facility_id: 3,708 missing
-
-facility_type: 1,998 missing
-
-capacity: 2,652 missing
-
-gps_location: 2,292 missing
-
-Found and removed 1,672 duplicate rows
-
-2. Data Cleaning
-facility_id: Removed special characters, filled missing values with "missing"
-
-facility_name: Removed parentheses content, emojis, and special characters
-
-facility_type:
-
-Standardized values (e.g., "Health Ctr." → "health center")
-
-Mapped to consistent categories (hospital, clinic, etc.)
-
-region:
-
-Fixed backwards names (e.g., "werdna .ts" → "st. andrew")
-
-Standardized using fuzzy matching with parish names
-
-capacity:
-
-Converted text numbers to digits (e.g., "ten beds" → 10)
-
-Extracted numerical values
-
-gps_location:
-
-Split into latitude and longitude columns
-
-Converted various formats to decimal coordinates
-
-dates: Converted to datetime format
-
-remarks: Cleaned text and standardized case
-
-<li> EDA Findings</li>
-Capacity Analysis (by facility type):
-
-Clinic: 146 avg capacity
-
-Community Health Center: 152
-
-Health Center: 136
-
-Hospital: 147
-
-Polyclinic: 144
-
-Regional Distribution: Standardized 11 parishes of Barbados
 
 GPS Coordinates: Cleaned and extracted valid latitude/longitude pairs
 
