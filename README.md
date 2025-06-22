@@ -13,14 +13,14 @@ This notebook performs exploratory data analysis (EDA) and cleaning on a healthc
   <li>Identified dataset structure (9 columns, 13,013 entries)</li>
 
   <li>Analyzed missing values:</li>
-    <ol>
-      <li>facility_id: 3,708 missing</li>
+  <ol>
+  <li>facility_id: 3,708 missing</li>
 
-      <li>facility_type: 1,998 missing</li>
+  <li>facility_type: 1,998 missing</li>
 
-      <li>capacity: 2,652 missing</li>
+  <li>capacity: 2,652 missing</li>
 
-      <li>gps_location: 2,292 missing</li>
+  <li>gps_location: 2,292 missing</li>
 </ol>
 Found and removed 1,672 duplicate rows
 </ol>
