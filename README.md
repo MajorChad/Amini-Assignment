@@ -7,10 +7,12 @@ This notebook performs exploratory data analysis (EDA) and cleaning on a healthc
 
 <h1>Key Steps Performed</h1>
 <ol>
-1. Initial Data Inspection
-Identified dataset structure (9 columns, 13,013 entries)
+<li> Initial Data Inspection</li>
 
-Analyzed missing values:
+<ol>
+<li>Identified dataset structure (9 columns, 13,013 entries)</li>
+
+<li>Analyzed missing values:</li>
 
 facility_id: 3,708 missing
 
@@ -21,7 +23,7 @@ capacity: 2,652 missing
 gps_location: 2,292 missing
 
 Found and removed 1,672 duplicate rows
-
+</ol>
 2. Data Cleaning
 facility_id: Removed special characters, filled missing values with "missing"
 
